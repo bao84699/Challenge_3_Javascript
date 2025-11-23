@@ -51,21 +51,13 @@ nhap.addEventListener("input", () => {
     if (score <= 1) {
         document.getElementById("checkpassword").textContent = "Weak";
         document.getElementById("checkpassword").style.color = "red";
-        checkEl.classList.remove("rung");
-        void checkEl.offsetWidth; // trigger reflow
         checkEl.classList.add("rung");
     } else if (score <= 3) {
         document.getElementById("checkpassword").textContent = "Medium";
         document.getElementById("checkpassword").style.color = "orange";
-        checkEl.classList.remove("rung");
-        void checkEl.offsetWidth; // trigger reflow
-        checkEl.classList.add("rung");
     } else {
         document.getElementById("checkpassword").textContent = "Strong";
         document.getElementById("checkpassword").style.color = "green";
-        checkEl.classList.remove("rung");
-        void checkEl.offsetWidth; // trigger reflow
-        checkEl.classList.add("rung");
     }
 });
 
