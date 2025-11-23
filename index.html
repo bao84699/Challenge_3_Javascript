@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="login-form-wrapper">
+        <form id="signinForm" class="login-form">
+            <h2 data-key="signin_title">Đăng Ký</h2>
+            <input type="text" id="username" name="username" data-key="username_input"
+                placeholder="Tên người dùng" required>
+            <input type="password" id="password" name="password" data-key="password_input"
+                placeholder="Mật khẩu (ít nhất 6 kí tự)" required>
+            <p id="checkpassword"></p>
+            <div style="height: 30px; margin-bottom: 20px;">
+                <input type="checkbox" id="subscribe" value="subscribe">
+                <label for="subscribe">Hiển thị mật khẩu</label><br>
+            </div>
+            <button type="submit" class="login-button" data-key="signin_button">Đăng Ký Tài Khoản</button>
+            <p class="register-prompt">
+                <span data-key="have_account">Đã có tài khoản?</span> <a href="index.html" class="register-link"
+                    data-key="login_now">Đăng nhập ngay</a>
+            </p>
+        </form>
+    </div>
+    <Script src="script.js
+    "></Script>
+</body>
+</html>
