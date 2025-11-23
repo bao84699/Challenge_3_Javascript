@@ -72,3 +72,20 @@ nhap.addEventListener("input", () => {
 check.onchange = function(e){
     nhap.type = check.checked ? "text" : "password";
 };
+
+let now = new Date();
+let hours = now.getHours();
+let greeting;
+if (hours < 12) {
+    greeting = "Good morning";
+    document.body.style.backgroundColor = "#ffffff";
+    
+} else if (hours < 18) {
+    greeting = "Good afternoon";
+    document.body.style.backgroundColor = "#f68d0b";
+} else {
+    greeting = "Good evening";
+    document.body.style.backgroundColor = "#2e3d76";
+}
+let message = greeting + ", " + fullname + "!";
+document.body.innerHTML = "<h2>" + message + "</h2>";
